@@ -1,0 +1,214 @@
+.topbar {
+  height: 56px;
+  background-color: #0b0f17;
+  border-bottom: 1px solid #161b22;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #8b949e;
+  font-family: inherit;
+  user-select: none;
+  width: 100%;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.contractGuard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.shieldIcon {
+  color: #10b981;
+}
+
+.contractText {
+  color: #e6edf3;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.toggle {
+  width: 34px;
+  height: 18px;
+  background-color: #21262d;
+  border-radius: 10px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 0;
+}
+
+.toggleActive {
+  background-color: #10b981;
+}
+
+.toggleKnob {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+
+.toggleActive .toggleKnob {
+  transform: translateX(16px);
+}
+
+.toolbarButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  color: #e6edf3;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    border-color 0.15s;
+}
+
+.toolbarButton:hover {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+.icon {
+  color: #8b949e;
+}
+
+.environment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  padding: 5px 12px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.environmentSelector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.globe {
+  color: #8b949e;
+}
+
+.selectValue {
+  color: #e6edf3;
+  font-size: 13px;
+}
+
+.chevron {
+  color: #8b949e;
+  transition: transform 0.2s;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 170px;
+  background-color: #111620;
+  border: 1px solid #21262d;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #8b949e;
+  cursor: pointer;
+  border-radius: 4px;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.dropdownItem:hover {
+  background-color: #1a2230;
+  color: #e6edf3;
+}
+
+.selectedItem {
+  color: #e6edf3;
+  font-weight: 400;
+}
+
+.checkIcon {
+  color: #e6edf3;
+}
+
+.baseUrl {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    monospace;
+  font-size: 12px;
+  color: #8b949e;
+  border-left: 1px solid #21262d;
+  padding-left: 10px;
+}
+
+.variablesButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  color: #e6edf3;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    border-color 0.15s;
+}
+
+.variablesButton:hover {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+.variablesIcon {
+  color: #8b949e;
+}

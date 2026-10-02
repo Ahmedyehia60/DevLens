@@ -1,0 +1,258 @@
+.sidebar {
+  position: relative;
+
+  width: 236px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  flex-shrink: 0;
+
+  background: #090c10;
+  border-right: 1px solid #20252c;
+
+  color: #8c99aa;
+
+  transition: width 180ms ease;
+}
+
+.sidebar.collapsed {
+  width: 64px;
+}
+
+.brand {
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 17px;
+
+  color: #f2f5f8;
+  font-size: 15px;
+  font-weight: 650;
+
+  white-space: nowrap;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #064c3b;
+  border-radius: 5px;
+
+  background: #061c18;
+  color: #00c995;
+}
+
+.collapseButton {
+  position: absolute;
+
+  top: 19px;
+  right: -11px;
+
+  width: 22px;
+  height: 22px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border: 1px solid #283039;
+  border-radius: 50%;
+
+  background: #11161c;
+  color: #9aa6b4;
+
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.collapseButton:hover {
+  background: #192027;
+  color: #00c995;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.engine {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0 17px 17px;
+
+  border-bottom: 1px solid #20252c;
+
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+.engineDot {
+  width: 6px;
+  height: 6px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #00d49b;
+  box-shadow: 0 0 8px rgba(0, 212, 155, 0.7);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  padding: 9px 5px 10px;
+}
+
+.navItem {
+  position: relative;
+
+  width: 100%;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 12px;
+
+  border-radius: 2px;
+
+  background: transparent;
+  color: #8290a2;
+
+  font-size: 13px;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.navItem:hover {
+  background: #11161c;
+  color: #b7c1ce;
+}
+
+.navItem.active {
+  background: #161b21;
+  color: #f0f3f6;
+}
+
+.navItem.active::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+
+  width: 2px;
+
+  background: #00c995;
+}
+
+.navItem.active svg {
+  color: #00c995;
+}
+
+.navDot {
+  width: 5px;
+  height: 5px;
+
+  margin-left: auto;
+
+  border-radius: 50%;
+
+  background: #00c995;
+  box-shadow: 0 0 7px rgba(0, 201, 149, 0.7);
+}
+
+.collectionsHeader {
+  padding: 10px 13px 8px;
+
+  border-top: 1px solid #20252c;
+
+  color: #7d8998;
+
+  font-size: 9px;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+
+.footer {
+  position: relative;
+
+  height: 50px;
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0 13px;
+
+  border-top: 1px solid #20252c;
+
+  color: #8390a0;
+
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+.footer svg {
+  flex-shrink: 0;
+}
+
+.collapseButton {
+  width: 22px;
+  height: 22px;
+
+  margin-left: auto;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border: 1px solid #283039;
+  border-radius: 4px;
+
+  background: #11161c;
+  color: #8995a3;
+
+  cursor: pointer;
+}
+
+.collapseButton:hover {
+  background: #192027;
+  color: #00c995;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+.footer svg {
+  flex-shrink: 0;
+}

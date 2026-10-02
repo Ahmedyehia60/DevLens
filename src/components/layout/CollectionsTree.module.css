@@ -1,0 +1,71 @@
+.tree {
+  padding: 0 7px;
+}
+
+.collection,
+.child {
+  width: 100%;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+
+  border: 0;
+  background: transparent;
+
+  color: #7e8c9e;
+  font-size: 12px;
+
+  cursor: pointer;
+  text-align: left;
+}
+
+.collection:hover,
+.child:hover {
+  background: #11161c;
+  color: #b9c3cf;
+}
+
+.collection svg,
+.child svg {
+  flex-shrink: 0;
+  color: #00a87e;
+}
+
+.arrow {
+  width: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #758191;
+}
+
+.name {
+  margin-left: 7px;
+}
+
+.count {
+  margin-left: auto;
+  padding-right: 7px;
+
+  color: #657282;
+  font-size: 10px;
+}
+
+.children {
+  margin-left: 20px;
+  border-left: 1px solid #1b2529;
+  padding-left: 4px;
+}
+
+.child {
+  height: 28px;
+  gap: 7px;
+  padding-left: 8px;
+}
+
+.child span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
